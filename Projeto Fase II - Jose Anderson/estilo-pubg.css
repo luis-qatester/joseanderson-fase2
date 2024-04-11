@@ -1,0 +1,263 @@
+body {
+  background-image: url(./images/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.banner-content {
+  width: 100%;
+  height: 780px;
+  background-image: url(./images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+.secoes {
+  width: 70%;
+  margin: auto;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.pubg-info {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.title-sections {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+
+  text-transform: uppercase;
+}
+
+.text-info {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.container {
+  width: 69%;
+  margin: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.feature-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-content {
+  padding: 15px;
+}
+
+.feature-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.requirements-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+
+  width: 70%;
+  margin: auto;
+
+  margin-bottom: 20px;
+}
+
+.requirements-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.requirements-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 15px;
+  color: #333;
+}
+
+.requirements-table thead th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.requirements-table td,
+.requirements-table th {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e3e6f0;
+  text-align: left;
+}
+
+.requirements-table tbody tr:nth-child(odd) {
+  background-color: #f8f9fc;
+}
+
+.requirements-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hover-th:hover {
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .requirements-table,
+  .requirements-table thead,
+  .requirements-table tbody,
+  .requirements-table th,
+  .requirements-table td,
+  .requirements-table tr {
+    display: block;
+  }
+
+  .requirements-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .requirements-table tr {
+    border: 1px solid #ccc;
+  }
+
+  .requirements-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  .requirements-table td:before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 500;
+    content: attr(data-label);
+  }
+}
+
+.carousel {
+  position: relative;
+  max-width: 2000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  height: 700px;
+  width: 100%;
+  display: none;
+}
+
+.carousel-images img:first-child {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}

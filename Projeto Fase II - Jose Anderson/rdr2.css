@@ -1,0 +1,168 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-size: large;
+  background: #1a1a1a !important;
+}
+
+main > section {
+  margin-bottom: 20px;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.imagem-close-footer {
+  width: 80%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  width: 50%;
+}
+
+section {
+  color: #d6cbcb;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.requirements-table {
+  width: 60%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.requirements-table th,
+.requirements-table td {
+  padding: 8px;
+  border: 1px solid #333;
+}
+
+.requirements-table thead th {
+  background-color: #202020;
+  color: white;
+}
+
+.requirements-table tbody td {
+  background-color: #242424;
+  color: white;
+}
+
+.requirements-table tbody tr:nth-child(odd) {
+  background-color: #1e1e1e;
+}
+
+.hover-th:hover {
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #f8f8f8;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .nav-links a {
+    padding: 0.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #575757;
+  }
+
+  .active .nav-links {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin-bottom: 0.5em;
+  }
+}
